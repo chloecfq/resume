@@ -34,7 +34,7 @@
             "content": "orangescf@163.com",
             "key": "email",
             "type": "mailto",
-            "color": "#7FB3D5"
+            "color": "#4388ce"
         },
         {
             "name": "手机",
@@ -47,7 +47,7 @@
             "content": "https://orangeschen.cn",
             "key": "blog",
             "type": "link",
-            "color": "#7FB3D5"
+            "color": "#4388ce"
         }
     ],
     "tags": [
@@ -67,17 +67,17 @@
             "fields": [
                 "熟练掌握 Objective-C，Swift，了解 C++/Python/TypeScript/Go 语言基础",
                 "熟悉面向对象设计的基本原则、常用的设计模式、数据结构和算法",
-                "熟悉大部分iOS开发与调试，理解iOS APP结构与运行机制，注重代码质量与执行效率",
-                "熟悉 UI 设计、网络通信机制，了解 Socket 通信、TCP/IP 和 HTTPS",
-                "熟悉 Git Flow工作流程，有较好的Git使用习惯，遵循团队开发规范",
-                "对并发、Runloop、Runtime有一定的理解",
+                "熟悉大部分 iOS 开发与调试，理解 iOS App 结构与运行机制，注重代码质量与执行效率",
+                "熟悉 Git Flow 工作流程，有较好的 Git 使用习惯，遵循团队开发规范",
+                "熟悉 Flutter，有 Flutter 跨端项目开发经验",
+                "熟悉线程、Runloop、Runtime 机制",
                 "对开源框架有一定的了解，YYCache 的缓存方案",
-                "对 APP 性能优化，业务解耦有有一定的理解",
+                "对 App 性能优化，应用埋点实现，业务解耦有一定的理解",
                 "了解 GraphQL 查询语言及 Apollo 使用",
-                "了解 Sourcery 框架使用，并编写Stencil模版代码",
-                "了解 TDD 开发模式，单元测试及移动端使用 Appium  e2e 测试",
+                "了解 TDD 开发模式，单元测试及使用 Appium e2e，mockito 等测试框架",
                 "了解 GCD、NSThread、NSOperationQueue 等多线程的使用",
-                "了解 React、Flutter、小程序、Web 开发，有跨平台开发经验"
+                "了解 React、小程序、Web 开发，有跨平台开发经验",
+                "了解 CI/CD 持续集成"
             ]
         },
         {
@@ -85,51 +85,67 @@
             "infoType": "skill",
             "fields": [
                 "前端框架：Angular/Remax/Next.js/React/Flutter",
-                "数据库相关：MongoDB/kafka",
-                "测试相关：Cypress/Appium/Airtest/Jest"
+                "测试相关：Cypress/Appium/Airtest/Jest",
+                "数据库相关：MongoDB/kafka"
             ]
         },
         {
             "title": "自我评价",
             "infoType": "evaluation",
             "fields": [
-                "对工作认真负责，有代码洁癖，严格遵守团队代码规范",
                 "善于总结，具有较强的抗压能力",
-                "性格开朗、乐观、具有良好的团队合作精神，适应能力强",
-                "对新技术充满好奇，热衷于了解新技术"
+                "对新技术充满好奇，热衷于了解新技术",
+                "对工作认真负责，有代码洁癖，严格遵守团队代码规范",
+                "性格开朗、乐观、具有良好的团队合作精神，适应能力强"
+            ]
+        },
+        {
+            "title": "职责",
+            "infoType": "responsible",
+            "fields": [
+                "负责 iOS 客户端小电播项目开发，参与项目评审，完成开发任务",
+                "能够作为项目 Owner，跟进项目进度及各部门沟通问题",
+                "了解前端技术栈，支持前端紧急业务开发，跟进线上问题",
+                "能够进行技术预研，输出技术文档，并推动技术落地"
             ]
         }
     ],
     "Works": [
         {
-            "company": "深圳碳原子科技有限公司（2019.11-至今）",
-            "project": "小电播",
-            "keyword": "技术关键词：Redux、Appolo、GraphQL、React Native、CI/CD",
-            "description": "主要负责直播和消息模块功能实现，APP 迭代开发，为了提高开发效率，方便团队快速开发，使用 Sourcery 编写 Stencil 代码，自动生成模块代码，优化重构 APP， 实现 APP 瘦身，编写持续集成工具配置，实现 Appium 自动化测试调研和使用。"
+            "company": "深圳追光制造科技有限公司（深圳碳原子科技有限公司）（2021.11-2022.6）",
+            "project": "Speedfox （IoT Flutter 项目） ",
+            "keyword": "技术关键词：Dart、Swift、Kotlin、Objective_C、Java、CI",
+            "description": "Speedfox App 是一款可连接追光智能洗地机的移动端应用，通过 Speedfox App 可以远程完成对追光洗地机的一系列功能操作，增强使用体验，并解锁追光洗地机更多智能功能。\n该 App 是 Flutter 开发项目，项目结构使用 GetX 框架实现状态管理、路由跳转及 App 国际化，IoT 功能使用第三方涂鸦 SDK 实现。我在项目中主要负责项目搭建，插件调研等前置工作，项目开发中主要负责 iOS/Android 原生端对接涂鸦 SDK，使用 Pigeon 插件生成接口模版代码，统一两端接口，完成跨端通信；实现用户账号管理模块，部分设备面板功能，App 国际化，Flutter App CI 持续集成，使用 mockito 框架实现单元测试，并达到85%以上的覆盖率，推进整个项目的进度，即时和产品、设计沟通，成功交付项目。"
+        },
+        {
+            "company": "深圳碳原子科技有限公司（2019.11-2021.11）",
+            "project": "小电播 - iOS App ",
+            "keyword": "技术关键词：Swift、Redux、Appolo、GraphQL、React Native、CI/CD",
+            "description": "项目致力于打造社交电商服务平台小电铺旗下专业的直播工具，为商家提供全盘运营、品牌营销、活动策 划等系列直播电商服务，网络请求使用 Appolo 查询 GraphQL 数据，Redux 管理数据流，个人中心以及直播间商品页面使用 React Native 混合开发。我在项目中主要负责直播和消息模块功能实现，APP 迭代开发，为了提高开发效率，方便团队快速开发，使用 Sourcery 编写 Stencil 代码，自动生成模块代码，优化重构 APP， 实现 APP 瘦身，编写持续集成工具配置，实现 Appium 自动化测试调研和使用。保证单元测试覆盖率，提高代码质量，实现 CI/CD 持续集 成、持续部署，完善基建。"
         },
         {
             "company": "",
-            "project": "前端项目（SaaS平台、小电铺/小电播小程序、数据管理平台）",
-            "keyword": "技术关键词：Angular、React、NG-ZORRO、Wepy、Remax、Cypress",
-            "description": "维护公司现有的 SaaS 平台及小程序业务的迭代开发和遗留 bug 修复，负责编写前端自动化测试工具，实现 Web 自动化测试，参与公司创新项目-A/B测试平台中后台项目编写等。"
+            "project": "前端项目（SaaS 平台、小电铺/小电播小程序、数据管理平台）",
+            "keyword": "技术关键词：Angular、React、NG-ZORRO、Wepy、Remax、NextJs",
+            "description": "维护公司现有的 SaaS 平台及小程序业务的迭代开发和遗留 bug 修复，负责编写前端自动化测试工具，实现 Web 自动化测试，参与公司创新项目-A/B测试平台中后台项目编写等。负责官网开发，使用 Next.js 框架，i18n 实现国际化，生成 SSG 项目，并部署到存储桶。"
         },
         {
-            "company": "深圳仟佰特科技有限公司 （2018. 7-2019. 9)",
-            "project": "论购",
-            "keyword": "",
-            "description": "参与需求评审，负责客户端的开发、迭代和维护，用 Swift 对项目进行重构，提高性能，对接 bugly SDK，实时跟进线上反馈，解决线上问题，优化用户体验，优化项目，实现客户端提及瘦身。"
+            "company": "深圳仟佰特科技有限公司 （2018.07-2019.09)",
+            "project": "论购 - iOS App",
+            "keyword": "MVVM、RxCocoa、Objective-C",
+            "description": "项目中主要负责参与需求评审，负责客户端的开发、迭代和维护，用 Swift 对项目进行重构，提高性能，对接 bugly SDK，实时跟进线上反馈，解决线上问题，优化用户体验，优化项目，实现客户端提及瘦身。"
         },
         {
-            "company": "深圳多新哆技术有限责任公司 （2016.7-2018.6）",
-            "project": "多哚VR",
-            "keyword": "技术关键词：VR、Unity 3D、ffmpeg、OpenGL ES",
-            "description": "负责部分页面需求实现，优化项目图片缓存策略，对接 Unity 工程，配置工程环境，测试 Unity 场景数据，对接数据分析 SDK，将 SDK 分析的数据与 Unity 工程进行交互。"
+            "company": "深圳多新哆技术有限责任公司 （2016.07-2018.06）",
+            "project": "多哚VR - iOS App",
+            "keyword": "技术关键词：Objective-C、VR、Unity 3D、ffmpeg、OpenGL ES",
+            "description": "一款体验沉浸式观影体验 VR 应用，影院 VR 场景使用 Unity 3D 实现，项目使用 MVVM 实现需求，对接 VR 设备 SDK，实时获取 SDK 回调数据，执行相关指令。在项目中我主要负责部分页面需求实现，优化项目图片缓存策略，对接 Unity 工程，获取陀螺仪数据与 Unity 工程进行交互。"
         },
         {
             "company": "",
-            "project": "Dloldo A1 SDK、Dlodlo VRPlayer桌面应用",
-            "keyword": "技术关键词：OpenVR、DirectX11、ffmpeg、SDL、OpenCV",
-            "description": "负责固件和客户端通讯SDK开发和维护，负责 Steam VRPlayer桌面应用需求开发。"
+            "project": "Dloldo A1 SDK、Dlodlo VRPlayer 桌面应用",
+            "keyword": "技术关键词：C++、OpenVR、DirectX11、ffmpeg、SDL、OpenCV",
+            "description": "负责固件和客户端通讯 SDK 开发和维护，负责 Steam VRPlayer 桌面应用需求开发。使用 OpenVR SDK 对接公司 VR 设备，实现设备连接应用观看本地 VR 视频功能。"
         }
     ]
 }
