@@ -43,6 +43,13 @@
             "type": "tel"
         },
         {
+            "name": "简历",
+            "content": "https://abc.orangeschen.cn",
+            "key": "resume",
+            "type": "link",
+            "color": "#4388ce"
+        },
+        {
             "name": "博客",
             "content": "https://orangeschen.cn",
             "key": "blog",
