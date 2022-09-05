@@ -27,7 +27,7 @@ export const WorkingView = (props: { works: Works[] }) => {
                                 <span className='ml-2 font-sans italic'>{project.keyword}</span>
                             </div>
                             }
-                            <div className='mt-2 text-justify whitespace-pre-line print:block'>{project.description}</div>
+                            <div className='mt-2 text-justify whitespace-pre-line flex-wrap'>{project.description}</div>
                         </div>
                     ))}
                 </div>

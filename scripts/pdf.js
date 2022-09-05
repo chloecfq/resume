@@ -39,8 +39,8 @@ const createPdf = async (file, path) => {
     await page.pdf({
         path: `pdfs/${file.replace(/\//, "-")}.pdf`,
         printBackground: true,
-        ...dimensions,
-        pageRanges: "1"
+        ...dimensions
+        // pageRanges: "1"
     });
 
     await browser.close();

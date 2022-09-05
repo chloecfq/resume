@@ -5,7 +5,7 @@ import dataJson from '../../public/resume/data.json';
 const HHomePage = (props) => {
     return (
         <div className='flex justify-center print:mb-0 print:block'>
-            <div className='max-w-screen min-h-screen m-12 print:mb-4 print:mx-4 print:mt-4'>
+            <div className='max-w-screen min-h-screen m-12 print:mb-4 print:mx-8 print:mt-4'>
                 <div className='flex flex-row print:flex-col print:mx-0'>
                     <div className='flex flex-col text-gray-600'>
                         <div className='text-3xl font-light'>{dataJson.name}</div>
@@ -15,7 +15,7 @@ const HHomePage = (props) => {
                         </div>
                     </div>
                     <div className='flex flex-row'>
-                        <div className='text-gray-500 mt-4 ml-14 font-light print:ml-4'>{dataJson.baseInfoTitle}</div>
+                        <div className='text-gray-500 mt-4 ml-14 font-light print:ml-0'>{dataJson.baseInfoTitle}</div>
                         <div className='flex flex-row'>
                             <div className='h-20 border-r border-gray-300 mt-4 ml-4'></div>
                             <InfoView infoList={dataJson.baseInfo}></InfoView>

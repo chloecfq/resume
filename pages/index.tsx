@@ -1,9 +1,7 @@
-import { env } from 'process';
 import HHomePage from './templete/hbase';
 
 
 const HomePage = (props) => {
-    const horizontal = env.horizontal
     return (
         // horizontal ? <HHomePage></HHomePage> :
         // <div>
@@ -11,6 +9,7 @@ const HomePage = (props) => {
         //     <div className='block print:hidden'><HHomePage></HHomePage></div>
         // </div>
         <HHomePage></HHomePage>
+        // <VHomePage></VHomePage>
     )
 }
 
