@@ -49,7 +49,7 @@
         "Works": {
             "type": "array",
             "items": {
-                "$ref": "#/defs/work"
+                "$ref": "#/defs/works"
             }
         },
         "skill": {
@@ -82,7 +82,11 @@
     },
     "defs": {
         "info": {
-            "required": ["key", "name", "content"],
+            "required": [
+                "key",
+                "name",
+                "content"
+            ],
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -97,10 +101,30 @@
                 },
                 "type": {
                     "type": "string",
-                    "enum": ["tel", "mailto", "link", "none"]
+                    "enum": [
+                        "tel",
+                        "mailto",
+                        "link",
+                        "none"
+                    ]
                 },
                 "color": {
                     "type": "string"
+                }
+            }
+        },
+        "works": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "company": {
+                    "type": "string"
+                },
+                "projects": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/defs/work"
+                    }
                 }
             }
         },
@@ -108,10 +132,7 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "company": {
-                    "type": "string"
-                },
-                "project": {
+                "name": {
                     "type": "string"
                 },
                 "keyword": {
