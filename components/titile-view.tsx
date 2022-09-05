@@ -40,7 +40,7 @@ export const TitileView = (props: { type: InfoType, title: string }) => {
     }
     return (
         <div className='w-5/6 border-b-2 border-dashed'>
-            <div className='flex flex-row mt-6 mb-2 mr-14 print:mr-0 print:mt-4'>
+            <div className='flex flex-row mt-6 mb-2 mr-14 print:mr-0 print:mt-6'>
                 {svgicon}
                 <span className='text-gray-500 text-base font-medium ml-2'>{props.title}</span>
             </div>

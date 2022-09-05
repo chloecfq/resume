@@ -50,7 +50,7 @@ export const TagsView = (props: { tags: string[] }) => {
 export const SkillView = (props: SkillProps) => {
     return (
         props.horizontal ?
-            <div className='flex flex-col w-1/2 pr-8 mb-4'>
+            <div className='flex flex-col w-1/2 print:w-full pr-8 mb-4'>
                 {props.skill.map((s, index) => (
                     <div key={'skill' + index}>
                         <TitileView title={s.title} type={InfoType[s.infoType]}></TitileView>

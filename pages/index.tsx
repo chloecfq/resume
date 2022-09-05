@@ -1,12 +1,16 @@
 import { env } from 'process';
-import VHomePage from './templete/vbase';
+import HHomePage from './templete/hbase';
 
 
 const HomePage = (props) => {
     const horizontal = env.horizontal
     return (
         // horizontal ? <HHomePage></HHomePage> :
-        <VHomePage></VHomePage>
+        // <div>
+        //     <div className='hidden print:block'><VHomePage></VHomePage></div>
+        //     <div className='block print:hidden'><HHomePage></HHomePage></div>
+        // </div>
+        <HHomePage></HHomePage>
     )
 }
 

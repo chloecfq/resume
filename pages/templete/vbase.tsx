@@ -30,7 +30,7 @@ const VHomePage = (props: { print?: boolean }) => {
                 <div className='flex flex-col mx-8 print:mx-0 print:block'>
                     <SkillView skill={[dataJson.skill[0]]} horizontal={false}></SkillView>
                     <WorkingView works={dataJson.Works}></WorkingView>
-                    <SkillView skill={dataJson.skill.slice(1, dataJson.skill.length - 1)} horizontal={false}></SkillView>
+                    <SkillView skill={dataJson.skill.slice(1, dataJson.skill.length)} horizontal={false}></SkillView>
                 </div>
             </div>
         </div>
