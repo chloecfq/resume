@@ -5,7 +5,7 @@ import VHomePage from './templete/vbase';
 
 const HomePage = (props) => {
 
-    const [isMobile, setIsMoblie] = useState(false)
+    const [isMobile, setIsMoblie] = useState(true)
     useEffect(() => {
         if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
             // 当前设备是移动设备
