@@ -77,7 +77,7 @@
                 "熟悉大部分 iOS 开发与调试，理解 iOS App 结构与运行机制，注重代码质量与执行效率",
                 "熟悉 Git Flow 工作流程，有较好的 Git 使用习惯，遵循团队开发规范",
                 "熟悉 Flutter，有 Flutter 跨端项目开发经验",
-                "熟悉线程、Runloop、Runtime 机制",
+                "熟悉线程、Runloop、Runtime、内存管理机制",
                 "对开源框架有一定的了解，YYCache 的缓存方案",
                 "对 App 性能优化，应用埋点实现，业务解耦有一定的理解",
                 "了解 GraphQL 查询语言及 Apollo 使用",
@@ -111,7 +111,7 @@
             "title": "技能清单",
             "infoType": "skill",
             "fields": [
-                "前端框架：Angular/Remax/Next.js/React/Flutter",
+                "前端框架：Flutter/Next.js/React/Angular/Remax/",
                 "测试相关：Cypress/Appium/Airtest/Jest",
                 "数据库相关：MongoDB/kafka"
             ]
@@ -134,7 +134,7 @@
                 {
                     "name": "小电播 - iOS App ",
                     "keyword": "Swift、Redux、Appolo、GraphQL、React Native、CI/CD",
-                    "description": "项目致力于打造社交电商服务平台小电铺旗下专业的直播工具，为商家提供全盘运营、品牌营销、活动策 划等系列直播电商服务。\n项目网络请求使用 Appolo 查询 GraphQL 数据，Redux 管理数据流，个人中心以及直播间商品页面使用 React Native 混合开发。\n我在项目中主要负责直播和消息模块功能实现，APP 迭代开发，为了提高开发效率，方便团队快速开发，使用 Sourcery 编写 Stencil 代码，自动生成模块代码，优化重构 APP， 实现 APP 瘦身，编写持续集成工具配置，实现 Appium 自动化测试调研和使用。保证单元测试覆盖率，提高代码质量，实现 CI/CD 持续集成、持续部署，完善基建。"
+                    "description": "项目致力于打造社交电商服务平台小电铺旗下专业的直播工具，为商家提供全盘运营、品牌营销、活动策 划等系列直播电商服务。\n项目网络请求使用 Appolo 查询 GraphQL 数据，Redux 管理数据流，个人中心以及直播间商品页面使用 React Native 混合开发。\n我在项目中主要负责直播和消息模块功能实现，App 迭代开发，为了提高开发效率，方便团队快速开发，使用 Sourcery 编写 Stencil 代码，自动生成模块代码，优化重构 App， 实现 App 瘦身，编写持续集成工具配置，实现 Appium 自动化测试调研和使用。保证单元测试覆盖率，提高代码质量，实现 CI/CD 持续集成、持续部署，完善基建。"
                 },
                 {
                     "name": "前端项目（SaaS 平台、小电铺/小电播小程序、数据管理平台）",
@@ -149,7 +149,7 @@
                 {
                     "name": "论购 - iOS App",
                     "keyword": "MVVM、RxCocoa、Objective-C",
-                    "description": "项目中主要负责参与需求评审，负责客户端的开发、迭代和维护，用 Swift 对项目进行重构，提高性能，对接 bugly SDK，实时跟进线上反馈，解决线上问题，优化用户体验，优化项目，实现客户端提及瘦身。"
+                    "description": "论购，是一款专注于购物返利，网购省钱的 App，提供全网大额优惠券，千万购物达人公认首选的省钱利器。\n项目中主要负责参与需求评审，负责客户端的开发、迭代和维护，用 Swift 对项目进行重构，提高性能，对接 bugly SDK，实时跟进线上反馈，解决线上问题，优化用户体验，优化项目，实现客户端提及瘦身。"
                 }
             ]
         },
