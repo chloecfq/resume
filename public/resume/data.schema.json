@@ -139,6 +139,22 @@
                     "type": "string"
                 },
                 "description": {
+                    "type": "object",
+                    "$ref": "#/defs/description"
+                }
+            }
+        },
+        "description": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "brief": {
+                    "type": "string"
+                },
+                "structure": {
+                    "type": "string"
+                },
+                "duty": {
                     "type": "string"
                 }
             }

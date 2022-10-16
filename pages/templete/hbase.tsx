@@ -17,7 +17,7 @@ const HHomePage = (props) => {
                     <div className='flex flex-row'>
                         <div className='text-gray-500 mt-4 ml-14 font-light print:ml-0'>{dataJson.baseInfoTitle}</div>
                         <div className='flex flex-row'>
-                            <div className='h-20 border-r border-gray-300 mt-4 ml-4'></div>
+                            <div className='h-28 border-r border-gray-300 mt-4 ml-4'></div>
                             <InfoView infoList={dataJson.baseInfo}></InfoView>
                         </div>
                         <div className='text-gray-500 mt-4 ml-14 font-light'>{dataJson.contactTitle}</div>
