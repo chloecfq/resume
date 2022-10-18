@@ -7,9 +7,9 @@ export interface Work {
 }
 
 export interface Description {
-    brief: string,
-    structure: string,
-    duty: string
+    brief?: string,
+    structure?: string,
+    duty?: string
 }
 
 export interface Works {
