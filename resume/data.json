@@ -26,6 +26,11 @@
             "name": "性别",
             "content": "女",
             "key": "gender"
+        },
+        {
+            "name": "工作年限",
+            "content": "5年",
+            "key": "exprience"
         }
     ],
     "contactInfo": [
@@ -72,28 +77,18 @@
             "title": "专业技能",
             "infoType": "field",
             "fields": [
-                "熟练掌握 Objective-C，Swift，了解 C++/Python/TypeScript/Go 语言基础",
-                "熟悉面向对象设计的基本原则、常用的设计模式、数据结构和算法",
-                "熟悉大部分 iOS 开发与调试，理解 iOS App 结构与运行机制，注重代码质量与执行效率",
-                "熟悉 Git Flow 工作流程，有较好的 Git 使用习惯，遵循团队开发规范",
+                "熟练掌握 Objective-C，Swift，了解 Dart/C++/Python/TypeScript 语言基础",
+                "熟悉 iOS 系统工作原理，Runloop、Runtime、内存管理机制",
                 "熟悉 Flutter 框架，有 Flutter 跨端项目开发经验",
-                "熟悉线程、Runloop、Runtime、内存管理机制",
-                "熟悉 GCD、NSThread、NSOperationQueue 等多线程的使用",
-                "有 App 性能优化，冷启动优化，应用埋点经验",
-                "了解 GraphQL，有使用 GraphQL API 经验",
+                "熟悉 GCD、NSOperationQueue 等多线程开发",
+                "熟悉面向对象设计的基本原则、常用的设计模式、数据结构和算法",
+                "对 App 性能优化、冷启动优化有一定的理解和实践",
+                "了解 TCP/HTTP 协议",
+                "了解 Flutter 底层 Engine、Embedder 实现原理",
+                "了解常用开源框架源码及实现原理，如：YYCache、AFNetWorking、SDWebImage",
                 "了解 TDD 开发模式，单元测试及使用 Appium e2e，mockito 等测试框架",
                 "了解 React、小程序、Web 开发，有跨平台开发经验",
                 "了解 CI/CD 持续集成相关流程"
-            ]
-        },
-        {
-            "title": "职责",
-            "infoType": "responsible",
-            "fields": [
-                "负责 iOS 客户端项目开发，参与项目评审，完成开发任务",
-                "能够作为项目 Owner，跟进项目进度及各部门沟通问题",
-                "了解前端技术栈，支持前端紧急业务开发，跟进线上问题",
-                "能够进行技术预研，输出技术文档，并推动技术落地"
             ]
         },
         {
@@ -102,68 +97,70 @@
             "fields": [
                 "善于总结，具有较强的抗压能力",
                 "对新技术充满好奇，热衷于了解新技术，自学能力强，能够独立思考和解决问题",
-                "对产品和代码质量有追求，有 code review、自交付需求及PK需求细节习惯",
-                "性格开朗、乐观、具有良好的团队合作精神，适应能力强"
-            ]
-        },
-        {
-            "title": "技能清单",
-            "infoType": "skill",
-            "fields": [
-                "前端框架：Flutter/Next.js/React/Angular/Remax/",
-                "测试相关：Cypress/Appium/Airtest/Jest",
-                "数据库相关：MongoDB/kafka"
+                "对产品和代码质量有追求，有 code review、自交付需求及 PK 需求细节习惯",
+                "具备自我驱动力，良好的编程习惯、沟通能力和优秀的团队协作力"
             ]
         }
     ],
     "Works": [
         {
-            "company": "深圳市追光制造科技有限公司（原深圳碳原子科技有限公司）（2021.11-2022.6）",
+            "company": "1. 深圳市追光制造科技有限公司（原深圳碳原子科技有限公司）（2021.8-2022.6）",
             "projects": [
                 {
                     "name": "Speedfox （IoT Flutter 项目） ",
                     "keyword": "Dart、Swift、Kotlin、Objective-C、Java、CI",
-                    "description": "Speedfox App 是一款可连接追光智能洗地机的移动端应用，通过 Speedfox App 可以远程完成对追光洗地机的一系列功能操作，增强使用体验，并解锁追光洗地机更多智能功能。\n该 App 是 Flutter 开发项目，项目结构使用 GetX 框架实现状态管理、路由跳转及 App 国际化，IoT 功能使用第三方涂鸦 SDK 实现。\n我在项目中主要负责项目搭建，插件调研等前置工作，项目开发中主要负责 iOS/Android 原生端对接涂鸦 SDK，使用 Pigeon 插件生成接口模版代码，统一两端接口，完成跨端通信；实现用户账号管理模块，部分设备面板功能，App 国际化，Flutter App CI 持续集成，使用 mockito 框架实现单元测试，并达到85%以上的覆盖率，推进整个项目的进度，即时和产品、设计沟通，成功交付项目。"
+                    "description": {
+                        "brief": "Speedfox App 是一款可连接追光智能洗地机的移动端应用，通过 Speedfox App 可以远程完成对追光洗地机的一系列功能操作，增强使用体验，并解锁追光洗地机更多智能功能。",
+                        "structure": "该 App 是 Flutter 开发项目，项目结构使用 GetX 框架实现状态管理、路由跳转及 App 国际化，IoT 功能使用第三方涂鸦 SDK 实现。",
+                        "duty": "我在项目中主要负责项目搭建，插件调研等前置工作，项目开发中主要负责 iOS/Android 原生端对接涂鸦 SDK，使用 Pigeon 插件生成接口模版代码，统一两端接口，完成跨端通信；设备面板功能、用户账号管理模块开发，App 国际化，Flutter App CI 持续集成，使用 mockito 框架实现单元测试，并达到85%以上的覆盖率，推进整个项目的进度，即时和产品、设计沟通，成功交付项目。"
+                    }
                 }
             ]
         },
         {
-            "company": "深圳碳原子科技有限公司（2019.11-2021.11）",
+            "company": "2. 深圳碳原子科技有限公司（2019.11-2021.8）",
             "projects": [
                 {
                     "name": "小电播 - iOS App ",
                     "keyword": "Swift、Redux、GraphQL、React Native、CI/CD",
-                    "description": "项目致力于打造社交电商服务平台小电铺旗下专业的直播工具，为商家提供全盘运营、品牌营销、活动策 划等系列直播电商服务。\n项目网络请求使用 Appolo 查询 GraphQL 数据，Redux 管理数据流，个人中心以及直播间商品页面使用 React Native 混合开发。\n我在项目中主要负责直播和消息模块功能实现，App 迭代开发，为了提高开发效率，方便团队快速开发，使用 Sourcery 编写 Stencil 代码，自动生成模块代码，优化重构 App， 实现 App 瘦身，全埋点 SDK 实现，编写持续集成工具配置，实现 Appium 自动化测试调研和使用。保证单元测试覆盖率，提高代码质量，实现 CI/CD 持续集成、持续部署，完善基建。"
+                    "description": {
+                        "brief": "项目致力于打造社交电商服务平台小电铺旗下专业的直播工具，为商家提供全盘运营、品牌营销、活动策 划等系列直播电商服务。",
+                        "structure": "项目架构为 MVVM，网络请求使用 Appolo 查询 GraphQL 数据，Redux 管理数据流，个人中心以及直播间商品页面使用 React Native 混合开发，直播间 IM 通讯使用 TXIMSDK ，推流使用腾讯和阿里推流 SDK ，根据用户地域分配不一样的推流策略。",
+                        "duty": "功能开发：1. 负责直播间核心模块，直播推拉流和 IM 功能，封装两套不同的推流 SDK，统一两端接口，适配不同的推流策略，解决推流中出现的问题。2. 优化 App 推流编码质量，自定义编码码率、帧率、分辨率参数。 3. 为了提高开发效率，方便团队快速开发，使用 Sourcery 编写 Stencil 脚本，实现自动生成代码工具；\nApp 性能优化：1. App 安装包瘦身，使安装包减少22M，提高 App 下载转化率。2. App 启动优化，将整个启动流程时间压缩到1秒左右。3. Appium e2e 测试引擎脚本开发，完成 CI/CD 持续集成，完善基建及效能工具开发。"
+                    }
                 },
                 {
                     "name": "前端项目（SaaS 平台、小电铺/小电播小程序、数据管理平台）",
                     "keyword": "Angular、React、NG-ZORRO、Wepy、Remax、NextJs",
-                    "description": "维护公司现有的 SaaS 平台及小程序业务的迭代开发和遗留 bug 修复，负责编写前端自动化测试工具，实现 Web 自动化测试，参与公司创新项目 A/B 测试平台中后台项目编写等。负责官网开发，使用 Next.js 框架，i18n 实现国际化，生成 SSG 项目，并部署到存储桶。"
+                    "description": {
+                        "brief": "维护公司现有的 SaaS 平台及小程序业务的迭代开发和遗留 bug 修复，负责编写前端自动化测试工具，实现 Web 自动化测试，参与公司创新项目 A/B 测试平台中后台项目编写等。负责官网开发，使用 Next.js 框架，i18n 实现国际化，生成 SSG 项目，并部署到存储桶。"
+                    }
                 }
             ]
         },
         {
-            "company": "深圳仟佰特科技有限公司 （2018.07-2019.09)",
+            "company": "3. 深圳仟佰特科技有限公司 （2018.07-2019.09)",
             "projects": [
                 {
                     "name": "论购 - iOS App",
                     "keyword": "MVVM、RxCocoa、Objective-C",
-                    "description": "论购，是一款专注于购物返利，网购省钱的 App，提供全网大额优惠券，千万购物达人公认首选的省钱利器。\n项目中主要负责参与需求评审，负责客户端的开发、迭代和维护，用 Swift 对项目进行重构，提高性能，对接 bugly SDK，实时跟进线上反馈，解决线上问题，优化用户体验，优化项目，实现客户端提及瘦身。"
+                    "description": {
+                        "brief": "论购，是一款专注于购物返利，网购省钱的 App，提供全网大额优惠券，千万购物达人公认首选的省钱利器。",
+                        "duty": "项目中主要负责参与需求评审，负责客户端的开发、迭代和维护，用 Swift 对项目进行重构，提高性能，对接 bugly SDK，实时跟进线上反馈，解决线上问题，优化用户体验，优化项目，实现客户端提及瘦身。"
+                    }
                 }
             ]
         },
         {
-            "company": "深圳多新哆技术有限责任公司 （2016.07-2018.06）",
+            "company": "4. 深圳多新哆技术有限责任公司 （2016.07-2018.06）",
             "projects": [
                 {
                     "name": "多哚VR - iOS App",
                     "keyword": "Objective-C、VR、Unity 3D、ffmpeg、OpenGL ES",
-                    "description": "一款体验沉浸式观影体验 VR 应用，影院 VR 场景使用 Unity 3D 实现，项目使用 MVVM 实现需求，对接 VR 设备 SDK，实时获取 SDK 回调数据，执行相关指令。在项目中我主要负责部分页面需求实现，优化项目图片缓存策略，对接 Unity 工程，获取陀螺仪数据与 Unity 工程进行交互。"
-                },
-                {
-                    "name": "Dloldo A1 SDK、Dlodlo VRPlayer 桌面应用",
-                    "keyword": "C++、OpenVR、DirectX11、ffmpeg、SDL、OpenCV",
-                    "description": "负责固件和客户端通讯 SDK 开发和维护，负责 Steam VRPlayer 桌面应用需求开发。使用 OpenVR SDK 对接公司 VR 设备，实现设备连接应用观看本地 VR 视频功能。"
+                    "description": {
+                        "brief": "一款体验沉浸式观影体验 VR 应用，影院 VR 场景使用 Unity 3D 实现，项目使用 MVVM 实现需求，对接 VR 设备 SDK，实时获取 SDK 回调数据，执行相关指令。",
+                        "duty": "在项目中我主要负责部分页面需求实现，优化项目图片缓存策略，对接 Unity 工程，获取陀螺仪数据与 Unity 工程进行交互。"
+                    }
                 }
             ]
         }
