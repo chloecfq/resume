@@ -10,12 +10,24 @@
                 "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
               },
               {
-                "*": "no_universal_links",
+                "/": "/buy/*",
+                "comment": "Matches any URL with a path that starts with /buy/."
+             },
+             {
+                "/": "/help/website/*",
                 "exclude": true,
-                "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
-              }
+                "comment": "Matches any URL with a path that starts with /help/website/ and instructs the system not to open it as a universal link."
+             },
+             {
+                "/": "/help/*",
+                "?": { "articleNumber": "????" },
+                "comment": "Matches any URL with a path that starts with /help/ and that has a query item with name 'articleNumber' and a value of exactly four characters."
+             }
             ]
-          }
-        ]
+          }       
+        ],
+        "webcredentials": {
+          "apps": [ "G8VSU5T22R.com.Alcidae.video" ]
+       }
       }
 }
