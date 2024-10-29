@@ -18,6 +18,19 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '20.x'
+      -name: show ssh
+        run: ls /home/runner/.ssh
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      -name: show ssh-1
+        run: ls ~/.ssh
+
       - name: check ssh
         run: ssh -vT git@github.com
 
