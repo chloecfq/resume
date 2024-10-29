@@ -18,6 +18,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '20.x'
+      - name: check ssh
+        run: ssh -vT git@github.com
 
       - name: Installing my packages
         run: yarn install
