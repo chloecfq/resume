@@ -18,6 +18,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '20.x'
+       - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa_github
+          chmod 600 ~/.ssh/id_rsa_github
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
 
       - name: Installing my packages
         run: yarn install
