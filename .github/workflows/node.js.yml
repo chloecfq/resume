@@ -21,6 +21,9 @@ jobs:
           
       - name: Show version
         run: node -v && npm -v
+      - name: Set env
+        run: export NODE_OPTIONS=--openssl-legacy-provider
+        
       - name: Installing my packages
         run: rm -rf node_modules && rm -rf package-lock.json && rm -rf yarn.lock && yarn cache clean && yarn install
 
