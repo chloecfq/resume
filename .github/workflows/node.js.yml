@@ -20,7 +20,7 @@ jobs:
           node-version: '20.x'
 
       - name: Installing my packages
-        run: yarn install
+        run: yarn cache clean && yarn install
 
       - name: Build my App
         run: npm run build && npm run export && touch ./out/.nojekyll
