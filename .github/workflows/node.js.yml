@@ -14,13 +14,15 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
-      - name: Use Node.js 20.x
+      - name: Use Node.js 20.14
         uses: actions/setup-node@v1
         with:
-          node-version: '20.x'
-
+          node-version: '20.14.0'
+          
+      - name: Show version
+        run: node -v && npm -v
       - name: Installing my packages
-        run: rm -rf package-lock.json && rm -rf yarn.lock && yarn cache clean && yarn install
+        run: rm -rf node_modules && rm -rf package-lock.json && rm -rf yarn.lock && yarn cache clean && yarn install
 
       - name: Build my App
         run: npm run build && npm run export && touch ./out/.nojekyll
