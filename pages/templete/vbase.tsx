@@ -29,9 +29,9 @@ const VHomePage = (props: { print?: boolean }) => {
                     </div>
                 </div>
                 <div className='sm:mx-8 mx-2 print:mx-0 print:block'>
-                    <SkillView skill={[dataJson.skill[0]]} horizontal={false}></SkillView>
-                    <SkillView skill={dataJson.skill.slice(1, dataJson.skill.length)} horizontal={false}></SkillView>
-                    <WorkingView works={dataJson.Works}></WorkingView>
+                    <SkillView skill={[dataJson.skill[0]]} tags={[]} horizontal={false}></SkillView>
+                    <SkillView skill={dataJson.skill.slice(1, dataJson.skill.length)} tags={[]} horizontal={false}></SkillView>
+                    <WorkingView works={dataJson.works}></WorkingView>
                 </div>
             </div>
         </div>

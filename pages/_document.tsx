@@ -21,7 +21,7 @@ export default class CustomDocument extends Document<{
     return (
       <Html>
         <Head>{this.props.styleTags}</Head>
-        <body className='bg-gray-50 flex justify-center'>
+        <body className='bg-white flex justify-center'>
           <Main />
           <NextScript />
         </body>

@@ -1,17 +1,17 @@
 const puppeteer = require("puppeteer");
 const Jsondata = require("../public/resume/data.json");
 
-const createPdf = async (file, path) => {
+const createPdf = async (file, path, isOnePage) => {
     const url = `http://localhost:3000/${path}`;
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
     try {
         // if (path.length > 0) {
-        page.setViewport({
-            width: 1280,
-            height: 920
-        })
+        // page.setViewport({
+        //     width: 1280,
+        //     height: 920
+        // })
         // } else {
         // page.setViewport({
         //         width: 1440,
@@ -35,16 +35,36 @@ const createPdf = async (file, path) => {
     });
     console.log(dimensions);
 
-
+   if (isOnePage) {
     await page.pdf({
         path: `pdfs/${file.replace(/\//, "-")}.pdf`,
         printBackground: true,
         ...dimensions
         // pageRanges: "1"
     });
+   } else {
+    await page.pdf({
+        path: `pdfs/${file.replace(/\//, "-")}.pdf`,
+        printBackground: true,
+        margin: {
+            top: 16,
+            bottom: 20,
+            left: 24,
+            right: 24
+        },
+        format: 'a4',
+        displayHeaderFooter: true,
+        footerTemplate: `
+          <div style="color: lightgray; font-size: 10px; padding-bottom: 5px; text-align: center; width: 100% height: 20px">
+          </div>
+        `
+        // pageRanges: "1"
+    });
+   }
+
 
     await browser.close();
 };
 
-createPdf(Jsondata.name + '-' + Jsondata.career, '');
+createPdf(Jsondata.name + '-' + Jsondata.career, '', false);
 // createPdf(Jsondata.name + '-' + Jsondata.career, 'templete/vbase');

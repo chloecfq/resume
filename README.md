@@ -14,6 +14,23 @@ yarn resume:pdf
 yarn resume:screenshot
 ```
 
+## 问题修复 ERR_OSSL_EVP_UNSUPPORTED
+运行入如果出现该问题
+```
+  opensslErrorStack: [
+    'error:03000086:digital envelope routines::initialization error',
+    'error:0308010C:digital envelope routines::unsupported'
+  ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+```
+
+node 版本和 openssl 不兼容导致，设置环境变量
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
 ## 数据修改
 
 - public/resume/data.json 

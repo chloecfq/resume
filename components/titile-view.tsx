@@ -4,7 +4,8 @@ export enum InfoType {
     'evaluation' = 'evaluation', // 评价
     'working' = 'working', // 工作经验,
     'skill' = 'skill', // 技能
-    'responsible' = 'responsible'
+    'responsible' = 'responsible', // 职责
+    'tags' = 'tags' // 开发语言
 }
 
 
@@ -35,6 +36,10 @@ export const TitileView = (props: { type: InfoType, title: string }) => {
             svgicon = <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
+            break
+        }
+        case InfoType.tags: {
+            svgicon = <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1492" width="24" height="24"><path d="M864 280.224V192a32 32 0 0 0-32-32H160a32 32 0 0 0-32 32v88.224h736z m-736 64V864a32 32 0 0 0 32 32h672a32 32 0 0 0 32-32v-86.592a32 32 0 1 1 64 0V864a96 96 0 0 1-96 96H160a96 96 0 0 1-96-96V192a96 96 0 0 1 96-96h672a96 96 0 0 1 96 96v120.224a32 32 0 0 1-32 32H128z" fill="#2c2c2c" p-id="1493"></path><path d="M595.84 437.088a32 32 0 0 1 60.16 21.856l-109.44 288a32 32 0 0 1-60.16-21.856l109.44-288zM744.192 469.408a32 32 0 1 1 47.616-42.816l126.432 140.64a32 32 0 0 1 0 42.784l-126.432 140.64a32 32 0 0 1-47.616-42.784l107.232-119.232-107.2-119.232zM406.24 469.408a32 32 0 1 0-47.584-42.816l-126.464 140.64a32 32 0 0 0 0 42.784l126.464 140.64a32 32 0 0 0 47.584-42.784l-107.2-119.232 107.2-119.232z" fill="#2c2c2c" p-id="1494"></path></svg>
             break
         }
     }

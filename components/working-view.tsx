@@ -26,7 +26,7 @@ export const WorkingView = (props: { works: Works[] }) => {
                 <div key={'work' + index} className='text-gray-600 text-sm mt-6 print:mt-4 print:flow-root'>
                     <p className='text-lg font-medium text-gray-700 print:mt-1'>{work.company}</p>
                     {work.projects.map((project, index) => (
-                        <div className='mt-3 print:mt-2' key={'project' + index}>
+                        <div className='mt-3 print:mt-3' key={'project' + index}>
                             <p className='font-medium'>{project.name}</p>
                             {project.keyword.length > 0 && <div className='mt-2 flex-row'>
                                 <span className='bg-whitse border rounded-full w-1 h-1 items-center'></span>
@@ -35,7 +35,7 @@ export const WorkingView = (props: { works: Works[] }) => {
                             }
                             {project.description.brief &&
                                 <div className='mt-2 text-justify whitespace-pre-line flex-wrap'>
-                                    <span className='font-medium text-xs'>简介：</span>
+                                    <span className='font-semibold text-xs'>简介：</span>
                                     {project.description.brief}
                                 </div>
                             }
@@ -46,7 +46,7 @@ export const WorkingView = (props: { works: Works[] }) => {
                                 </div>
                             }
                             {project.description.duty &&
-                                <div className='mt-2 text-justify whitespace-pre-line flex-wrap'>
+                                <div className='mt-2 mb-1 text-justify whitespace-pre-line flex-wrap'>
                                     <span className='font-medium text-xs'>职责：</span>
                                     {project.description.duty}
                                 </div>

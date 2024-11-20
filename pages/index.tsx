@@ -19,8 +19,8 @@ const HomePage = (props) => {
         //     <div className='hidden print:block'><VHomePage></VHomePage></div>
         //     <div className='block print:hidden'><HHomePage></HHomePage></div>
         // </div>
-        // isMobile ? <VHomePage></VHomePage> : <HHomePage></HHomePage>
-        <VHomePage></VHomePage>
+        isMobile ? <VHomePage></VHomePage> : <HHomePage></HHomePage>
+        // <VHomePage></VHomePage>
     )
 }
 
