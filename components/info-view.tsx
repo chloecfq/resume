@@ -30,10 +30,10 @@ export const InfoView = (props: { infoList: Info[] }) => {
             {props.infoList.map(info => (
                 <div className='flex flex-row text-gray-600 mb-1 text-sm' key={info.key}>
                     <div className=''>{info.name}：</div>
-                    {info.type && <a href={(info.type === 'link' ? '' : info.type + ':') + info.content} target="_blank">
-                        <div className='' style={info.color && { color: info.color }}>
+                    {info.type && <a href={(info.type === 'link' ? '' : info.type + ':') + info.content} target="_blank" style={info.color && { color: info.color }}>
+                        {/* <span className='' style={info.color && { color: info.color }}> */}
                             {info.content}
-                        </div>
+                        {/* </span> */}
                     </a>}
                     {!info.type && <div className=''>
                         {info.content}
