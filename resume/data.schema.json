@@ -46,7 +46,13 @@
                 "type": "string"
             }
         },
-        "Works": {
+        "codingSkills": {
+            "type": "array",
+            "items": {
+                "$ref": "#/defs/tagItem"
+            }
+        },
+        "works": {
             "type": "array",
             "items": {
                 "$ref": "#/defs/works"
@@ -155,6 +161,18 @@
                     "type": "string"
                 },
                 "duty": {
+                    "type": "string"
+                }
+            }
+        },
+        "tagItem": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "percent": {
                     "type": "string"
                 }
             }
