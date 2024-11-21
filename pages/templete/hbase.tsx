@@ -9,8 +9,8 @@ const HHomePage = (props) => {
                 <div className='flex flex-row print:flex-col print:mx-0'>
                     <div className='flex flex-col text-gray-700'>
                         <div className='text-3xl font-light'>{dataJson.name}</div>
-                        <div className='text-sm font-extralight mt-2'>{dataJson.career}</div>
-                        <div className='text-sm font-extralight mt-2'>{dataJson.school}
+                        <div className='text-sm font-semibold text-blue-900 mt-2'>{dataJson.career}</div>
+                        <div className='text-sm font-semibold mt-2'>{dataJson.school}
                             <span id='text' className='ml-3 text-xs'>{dataJson.educationTime}</span>
                         </div>
                     </div>
