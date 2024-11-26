@@ -23,7 +23,7 @@ export const WorkingView = (props: { works: Works[] }) => {
         <div className='flex flex-col w-full print:mb-0 print:block'>
             <TitileView title='工作经验' type={InfoType.working}></TitileView>
             {props.works.map((work, index) => (
-                <div key={'work' + index} className='text-gray-600 text-sm mt-6 print:mt-4 print:flow-root'>
+                <div key={'work' + index} className='text-gray-600 text-sm mt-3 print:mt-4 print:flow-root'>
                     <p className='text-lg font-medium text-gray-700 print:mt-1'>{work.company}</p>
                     {work.projects.map((project, index) => (
                         <div className='mt-3 print:mt-3' key={'project' + index}>
