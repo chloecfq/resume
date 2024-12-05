@@ -126,7 +126,8 @@
                 "了解常用开源框架源码及实现原理，如：YYCache、AFNetWorking、SDWebImage",
                 "了解 TDD 开发模式，单元测试及使用 Appium e2e，mockito 等测试框架",
                 "了解 React、小程序、Web、Shopify、Next.js 开发，有跨平台开发经验",
-                "了解 CI/CD 持续集成相关流程"
+                "了解 CI/CD 持续集成相关流程",
+                "了解 TypeScript/JavaScript，有一定的 Web 前端开发经验"
             ]
         },
         {
